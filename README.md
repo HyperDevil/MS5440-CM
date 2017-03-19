@@ -1,5 +1,19 @@
 # MS5440-CM
-Arduino program for MS5440-CM barometric and temperature sensor.
-
-Output on serial port every 5 seconds, 9600 bps.
-
+Arduino program for MS5440-CM barometric and temperature sensor.<br>
+Output on serial port every 5 seconds, 9600 bps.<br>
+<br>
+PINS:
+<br>
+VCC -----------------> 3.3v<br>
+GND ---------------- > GND<br>
+DIN (MOSI) ----------> pin (11)<br>
+DOUT (MISO) ---------> pin (12)<br>
+SCLK ----------------> pin (13)<br>
+MCLK ----------------> pin (9)<br>
+<br>
+Output of program:<br>
+************************************<br>
+Absolute Pressure =    978 mbar<br>
+Sea-level Pressure =    992.27 mbar<br>
+Temperature = 21.80 C<br>
+************************************<br>
