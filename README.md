@@ -1,5 +1,5 @@
 # MS5440-CM
-Arduino program for MS5440-CM barometric and temperature sensor.<br>
+Arduino UNO program for MS5440-CM barometric and temperature sensor.<br>
 Output on serial port every 5 seconds, 9600 bps.<br>
 <br>
 PINS:
