@@ -130,7 +130,7 @@ void loop()
  const float TEMPCOMP = (200 + (dT2*(c6+100) >>11))*0.1;
 
  //meters above sealevel
- float SEA_LEVEL_PRES = sealevel(PCOMP,122);
+ float SEA_LEVEL_PRES = sealevel(PCOMP,122); //height above sea-Level in Meters 122 is an example
 
  Serial.print("Absolute Pressure =    ");
  Serial.print(PCOMP);
