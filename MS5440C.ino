@@ -1,7 +1,7 @@
 #include <SPI.h>
 int clock = 9;
 
-void resetsensor() //this function keeps the sketch a little shorter
+void resetsensor()
 {
  SPI.setDataMode(SPI_MODE0); 
  SPI.transfer(0x15);
@@ -16,7 +16,7 @@ double sealevel(double abspress, double height)
 
 void setup() {
  Serial.begin(9600);
- SPI.begin(); //see SPI library details on arduino.cc for details
+ SPI.begin(); 
  SPI.setBitOrder(MSBFIRST);
  SPI.setClockDivider(SPI_CLOCK_DIV32); //divide 16 MHz to communicate on 500 kHz
  pinMode(clock, OUTPUT);
@@ -130,7 +130,7 @@ void loop()
  const float TEMPCOMP = (200 + (dT2*(c6+100) >>11))*0.1;
 
  //meters above sealevel
- float SEA_LEVEL_PRES = sealevel(PCOMP,122); //height above sea-Level in Meters 122 is an example
+ float SEA_LEVEL_PRES = sealevel(PCOMP,122); //height above sea-Level in meters, 122 is an example
 
  Serial.print("Absolute Pressure =    ");
  Serial.print(PCOMP);
