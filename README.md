@@ -1,5 +1,6 @@
 # MS5440-CM
 Arduino UNO program for MS5440-CM barometric and temperature sensor.<br>
+The sensor is produced by Measurement Specialties.<br>
 Output on serial port every 5 seconds, 9600 bps.<br>
 <br>
 PINS:
